@@ -2,7 +2,7 @@
 
 Purpose of the code
 ==
-I wanted to create a program that could translate braille text given in numerical format, like 123, 1346 etc., to a text of actuall Braille characters.
+I wanted to create a program that could translate braille text given in numerical format, like 123, 1346 etc., to a text of actual Braille characters.
 
 How to use
 ==
