@@ -1,6 +1,3 @@
-# server-client_diseaseAggregator
-A disease aggregator based on server-client communication
-
 # 6dots2Braille
 I just wanted to create a program that could translate braille text given in numerical format, like 123, 1346 etc., to a text of actual Braille characters.
 
