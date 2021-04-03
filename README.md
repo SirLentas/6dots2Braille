@@ -1,8 +1,6 @@
-# 6dots2Braille
-
-Purpose of the code
+6dots2Braille
 ==
-I wanted to create a program that could translate braille text given in numerical format, like 123, 1346 etc., to a text of actual Braille characters.
+I just wanted to create a program that could translate braille text given in numerical format, like 123, 1346 etc., to a text of actual Braille characters.
 
 How to use
 ==
