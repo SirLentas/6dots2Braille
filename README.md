@@ -17,7 +17,9 @@ Use _line_ to insert a line break and _0_ for the empty Braille character.
 Example
 ==
 6dots numerical:
-123-1246-0-1346-line-23-1346
+
+    123-1246-0-1346-line-23-1346
 Braille:
-⠇⠫⠀⠭
-⠆⠭
+
+    ⠇⠫⠀⠭
+    ⠆⠭
