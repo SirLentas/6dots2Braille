@@ -7,7 +7,8 @@ I wanted to create a program that could translate braille text given in numerica
 How to use
 ==
 Use the follow command to create executable _translate_.
-  gcc -o translate translator.c -lm
+
+    gcc -o translate translator.c -lm
 And run it without arguments.
 
 After execution give your text characters seperated with a dash (-).
