@@ -12,33 +12,36 @@ int main()
     char line[1200];
     int value;
     char *c1;
-    fgets(line, 120, stdin);
-    printf("6dots:\n %s", line);
-    printf("Braille:\n");
-    c1 = strtok(line, "-\n\0");
-    while (c1)
+    while (1)
     {
-        if (strcmp(c1, "line") == 0)
+        printf("Give 6dots numerical:\n");
+        fgets(line, 120, stdin);
+        printf("Braille:\n");
+        c1 = strtok(line, "-\n\0");
+        while (c1)
         {
-            printf("\n");
-        }
-        else if (strcmp(c1, "0") == 0)
-        {
-            printf("%lc", 0x2800);
-        }
-        else if (atoi(c1) >= 1 && atoi(c1) <= 123456)
-        {
-            int number=atoi(c1);
-            value = 0;
-            while(number)
+            if (strcmp(c1, "line") == 0)
             {
-                int digit=number%10;
-                value+=pow(2,digit-1);
-                number /= 10;
+                printf("\n");
             }
-            printf("%lc", br+value);
+            else if (strcmp(c1, "0") == 0)
+            {
+                printf("%lc", 0x2800);
+            }
+            else if (atoi(c1) >= 1 && atoi(c1) <= 123456)
+            {
+                int number = atoi(c1);
+                value = 0;
+                while (number)
+                {
+                    int digit = number % 10;
+                    value += pow(2, digit - 1);
+                    number /= 10;
+                }
+                printf("%lc", br + value);
+            }
+            c1 = strtok(NULL, "-\n\0");
         }
-        c1 = strtok(NULL, "-\n\0");
-    }
     printf("\n");
+    }
 }
